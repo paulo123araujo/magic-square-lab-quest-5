@@ -1,7 +1,7 @@
-import solve from "../src/solve.js";
+import solve from '../src/solve.js';
 
-describe("solve", () => {
-  it("should return false if matrix is empty", () => {
+describe('solve', () => {
+  it('should return false if matrix is empty', () => {
     const matrix = [
       [0, 0, 0],
       [0, 0, 0],
@@ -11,7 +11,7 @@ describe("solve", () => {
     expect(solve(matrix)).toBeFalsy();
   });
 
-  it("should return true if matrix is solved", () => {
+  it('should return true if matrix is solved', () => {
     const matrix = [
       [2, 7, 6],
       [9, 5, 1],
@@ -21,7 +21,7 @@ describe("solve", () => {
     expect(solve(matrix)).toBeTruthy();
   });
 
-  it("should return false if matrix is not solved", () => {
+  it('should return false if matrix is not solved', () => {
     const matrix = [
       [1, 2, 3],
       [4, 5, 6],
@@ -31,7 +31,7 @@ describe("solve", () => {
     expect(solve(matrix)).toBeFalsy();
   });
 
-  it("should return false if matrix has negative number", () => {
+  it('should return false if matrix has negative number', () => {
     const matrix = [
       [2, 7, 6],
       [-9, 5, 1],
@@ -41,7 +41,7 @@ describe("solve", () => {
     expect(solve(matrix)).toBeFalsy();
   });
 
-  it("should return false if matrix has digit bigger than 9", () => {
+  it('should return false if matrix has digit bigger than 9', () => {
     const matrix = [
       [2, 7, 6],
       [10, 5, 1],
@@ -51,7 +51,7 @@ describe("solve", () => {
     expect(solve(matrix)).toBeFalsy();
   });
 
-  it("should return false if matrix has repeated digit", () => {
+  it('should return false if matrix has repeated digit', () => {
     const matrix = [
       [2, 7, 6],
       [1, 5, 1],
