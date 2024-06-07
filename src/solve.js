@@ -1,3 +1,5 @@
+const magicSum = n => (n * (n * n + 1)) / 2;
+
 /**
  * @param {Array<Array<number>>} matrix
  * @return {boolean}
@@ -34,7 +36,7 @@ export default function solve(matrix) {
     }
   }
 
-  const tested = cols[0];
+  const tested = magicSum(len);
   for (let i = 0; i < len; i++) {
     if (cols[i] !== tested) {
       return false;
